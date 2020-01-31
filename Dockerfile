@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
+FROM ubuntu
 MAINTAINER Me (Me@mail.com)
-RUN apt-get install -y nginx=1.10.3-0ubuntu0.16.04.5
+RUN apt-get install -y nginx
 ENTRYPOINT [“/usr/sbin/nginx”,”-g”,”daemon off;”]
 EXPOSE 80
